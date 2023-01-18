@@ -1,0 +1,12 @@
+header {
+    background-color: cornflowerblue;
+}
+
+.navbar {
+    padding: 2rem;
+}
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+  }
