@@ -1,67 +1,56 @@
-/* General */
-a {
-    font-family: 'Source Code Pro', monospace;
+nav {
+    background: #3A3E4B;
 }
 
-h1 {
-    font-size: 2.5rem;
-    font-family: 'Source Code Pro', monospace;
-}
+/*Header*/
 
-h2 {
-    font-size: 1.5rem;
-    font-family: 'Source Code Pro', monospace;
-    padding: 10px;
-}
-
-p {
-    font-family: 'Source Code Pro', monospace;
-    font-size: 1.5rem;
-}
-
-/* Header */
-.argentinaProgramaImage {
+.headerImage {
     height: 70px;
 }
 
-.navbar {
-    padding: 2rem;
+.button-toggler.navbar-toggler {
+    border: 3px solid #FF9138;
 }
 
-.navbar-collapse {
-    align-items: center;
-    justify-content: space-between;
+.border-hover {
+    border-top: 5px solid transparent;
+    transform: translateY(-4px);
 }
 
-
-
-/* Hero */
-.section-hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    color: whitesmoke;
+.border-hover:hover {
+    border-top: 3px solid #ff9138;
+    transform: translateY(-3px);
 }
 
-.bg-image {
-    background-image: url('/assets/img/bgImage.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+.navbar-toggler:focus {
+    box-shadow: none;
 }
 
-.profileFoto {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    margin: 20px;
+#nav-length {
+    width: 90%;
 }
 
-/* AboutMe */
-.section-aboutme {
-    color: white;
-    height: 500px;
-    padding: 50px;
+#logIn {
+    background: #FF9138;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+@media screen and (max-width : 751px) {
+    #nav-length {
+        width: 100%;
+    }
+
+    .border-hover {
+        border-top: 0;
+    }
+
+    .border-hover:hover {
+        border: 3px solid #ff9138;
+        transform: translateY(-3px);
+    }
+
+    #logIn {
+        border-radius: 50px;
+    }
 }

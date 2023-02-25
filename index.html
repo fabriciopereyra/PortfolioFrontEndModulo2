@@ -15,139 +15,73 @@
   <title>Portfolio | YoProgramo4</title>
 
   <!--Favicon-->
-  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
 
   <!--CSS-->
   <link rel="stylesheet" href="assets/css/style.css">
 
   <!--Bootstrap-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
   <!-- Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@900&display=swap">
 
 </head>
 
 <body>
 
-  <!-- Header -->
+  <!-- Header-->
   <header>
-    <div class="container-fluid bg-image">
-      <div class="row">
+
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-md fixed-top pt-3">
+      <div class="container-fluid">
+
         <!-- ArgentinaProgramaImg -->
-        <div class="col">
-          <div class="d-block d-sm-none">
-            <a href="https://argentinaprograma.inti.gob.ar/" target="_blank"">
-              <img src=" assets/img/iconArgProSM.ico" alt="ArgentinaPrograma" class="argentinaProgramaImage">
-            </a>
-          </div>
-          <div class="d-none d-sm-block">
-            <a href="https://argentinaprograma.inti.gob.ar/" target="_blank">
-              <img src="assets/img/iconArgPro.png" alt="ArgentinaPrograma" class="argentinaProgramaImage">
-            </a>
-          </div>
-        </div>
-        <!-- Social -->
-        <div class="col">
-          <div class="d-none d-lg-block">
-            <ul class="navbar-nav list-group-horizontal justify-content-end">
-              <li class="nav-item">
-                <a href="https://argentinaprograma.inti.gob.ar/" target="_blank">
-                  <img src="assets/img/iconFacebook.svg" alt="ArgentinaPrograma" class="argentinaProgramaImage">
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="https://argentinaprograma.inti.gob.ar/" target="_blank">
-                  <img src="assets/img/iconFacebook.svg" alt="ArgentinaPrograma" class="argentinaProgramaImage">
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="https://argentinaprograma.inti.gob.ar/" target="_blank">
-                  <img src="assets/img/iconFacebook.svg" alt="ArgentinaPrograma" class="argentinaProgramaImage">
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="https://argentinaprograma.inti.gob.ar/" target="_blank">
-                  <img src="assets/img/iconFacebook.svg" alt="ArgentinaPrograma" class="argentinaProgramaImage">
-                </a>
-              </li>
-            </ul>
-          </div>
+        <a class="d-block d-lg-none" href="https://argentinaprograma.inti.gob.ar/" target="_blank"">
+          <img class=" headerImage" src=" assets/img/iconArgProSM.ico" alt="ArgentinaPrograma">
+        </a>
+        <a class="d-none d-lg-block" href="https://argentinaprograma.inti.gob.ar/" target="_blank">
+          <img class="headerImage" src="assets/img/iconArgPro.png" alt="ArgentinaPrograma">
+        </a>
+
+        <!--Navbar Button-->
+        <button class="navbar-toggler button-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--Navbar Option List-->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul id="nav-length" class="navbar-nav justify-content-between border-top border-2 text-center">
+            <li class="nav-item">
+              <a class="nav-link border-hover py-3 text-white" href="#">Acerca de</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link border-hover py-3 text-white" href="#">Experiencia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link border-hover py-3 text-white" href="#">Educación</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link border-hover py-3 text-white" href="#">Habilidades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link border-hover py-3 text-white" href="#">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a id="logIn" class="nav-link my-2 px-4 text-white" href="#">Log In</a>
+            </li>
+          </ul>
         </div>
       </div>
-      <!-- Navbar -->
-      <div class="row">
-        <nav class="navbar navbar-expand-md navbar-dark">
-          <div class="container-fluid justify-content-end">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
-              aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbar-toggler">
-              <a class="navbar-brand" href="#">
-              </a>
-              <ul class="navbar-nav d-flex justify-content-center align-items-end">
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#">Acerca de</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Experiencia</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Educación</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Habilidades</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Proyectos</a>
-                </li>
-                <li class="nav-item">
-                  <button type="button" class="btn btn-outline-light btn-lg">
-                    Login
-                  </button>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </div>
+    </nav>
   </header>
 
-  <!-- Hero -->
-  <section>
-    <div class="container-fluid bg-image">
-      <div class="section-hero">
-        <img class="profileFoto" src="assets/img/profileFoto.png" alt="Foto de perfil">
-        <h1>
-          Fabricio Daniel PEREYRA ESPECHE
-        </h1>
-        <h2>
-          Full Stack Developer Jr.
-        </h2>
-      </div>
-    </div>
-  </section>
-
-  <!-- AboutMe -->
-  <section>
-    <div class="container-fluid bg-image">
-      <div class="section-aboutme">
-        <h2>Quien soy?</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, rerum. Inventore modi nulla ipsa reiciendis commodi veniam itaque ea dolore iusto aspernatur tempora, vero possimus nostrum quos labore qui natus.
-        </p>
-
-      </div>
-    </div>
-  </section>
-
-
-
-  <!--Script-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
