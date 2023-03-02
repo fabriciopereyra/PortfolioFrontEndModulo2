@@ -1,52 +1,19 @@
 /* General */
-
-a {
-    font-family: 'Source Code Pro', monospace;
-}
-
-aside {
-    float: left;
-    padding-top: 50px;
-}
-
-h1 {
-    font-size: 2.5rem;
-    font-family: 'Source Code Pro', monospace;
-    text-align: right;
-}
-
-h2 {
-    font-size: 1.5rem;
-    font-family: 'Source Code Pro', monospace;
-    padding: 10px;
-}
-
-header {
-    height: 93px;
-}
-
-p {
-    font-family: 'Source Code Pro', monospace;
-    font-size: 1.5rem;
-    text-align: justify;
-}
-
 .bg-color {
     background: #3A3E4B;
-}
-
-.text-color {
-    color: #FF9138;
 }
 
 .bg-item-color {
     background: #FF9138;
 }
 
-/*Header*/
+.text-color {
+    color: #FF9138;
+}
 
-.headerImage {
-    height: 70px;
+/*Header*/
+.header-image {
+    height: 60px;
 }
 
 .navbar-toggler.button-toggler {
@@ -64,21 +31,20 @@ p {
 }
 
 .navbar-toggler:focus {
-    box-shadow: none;
+    box-shadow: block;
 }
 
-#nav-length {
+.nav-length {
     width: 90%;
 }
 
-#logIn {
-    
-    border-top-left-radius: 50px;
-    border-bottom-left-radius: 50px;
+.nav-botton-container {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
 }
 
 @media screen and (max-width : 751px) {
-    #nav-length {
+    .nav-length {
         width: 100%;
     }
 
@@ -91,9 +57,22 @@ p {
         transform: translateY(-3px);
     }
 
-    #logIn {
+    .nav-botton-container {
         border-radius: 50px;
     }
+}
+
+/* Aside */
+.aside-container {
+    float: left;
+    margin-top: 10px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.aside-icon {
+    height: 70px;
+    width: 70px;
 }
 
 @media screen and (max-width : 377px) {
@@ -103,59 +82,108 @@ p {
     }
 }
 
-/* Aside */
+/* Hero */
+#section-hero {
+    padding-top: 75px;
+}
 
-.icon-height {
+.bg-image {
+    background-image: url('/assets/img/bgImage2.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;    
+}
+
+.profile-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-right: 40px;
+}
+
+.section-profile-text {
+    margin-right: 50px;
+}
+
+.section-profile-stack {
+    margin-right: 50px;
+}
+
+.section-profile-stack-icon {
     height: 70px;
     width: 70px;
 }
 
-#socialWrap {
-    border-radius: 0px 24px 24px 0px;
+.section-profile-text h1 {
+    font-size: 4rem;
 }
 
-/* Hero */
-
-.bg-image {
-    background-image: url('/assets/img/bgImage.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-}
-
-.profileFoto {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    margin: 20px;    
-}
-
-.section-hero {
-    padding-top: 25px;
-    padding-bottom: 25px;
-    color: white;
+.section-profile-text h2 {
+    text-align: end;
+    font-size: 3rem;
 }
 
 /* About Me*/
+#section-aboutme {
+    background: #3A3E4B;
+    padding-top: 75px;
+}
 
-.section-aboutmMe {
-    padding-top: 25px;
-    padding-bottom: 25px;
-    color: white;
+.section-aboutme-text {
+    padding: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.section-aboutme-title h2 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.section-aboutme-text p {
+    text-align: justify;
+    font-size: 2rem;
 }
 
 /* Experience*/
+#section-experience {
+    padding-top: 75px;
+    background: #3A3E4B;
+}
+
+.section-experience-title h2 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.section-experience-text {
+    padding: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.section-experience-text-experience {
+    padding: 5px;
+    margin-bottom: 20px;
+    border: solid 2px #FF9138;
+    border-radius: 24px;
+}
+
+.section-experience-text-experience:hover {
+    background: #FF9138;
+    border: solid 2px;
+}
 
 .company-icon {
-    height: 200px;
-    width: 200px;
+    height: 100px;
+    width: 100px;
 }
 
 .text-title {
     color: darkgray;
 }
 
-.text-table{ 
+.text-table {
     display: inline;
-} 
+}
