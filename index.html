@@ -28,6 +28,34 @@
 
 <body>
 
+  <!-- Modal -->
+  <section id="section-login">
+    <dialog class="animate">
+      <header class="d-flex justify-content-between">
+        <h2>Accede a la edicion</h2>
+        <span id="btnModalClose" class="section-login-header-btn-close">&times;</span>
+      </header>
+      <form class="section-login-form" method="dialog">
+        <label for="userName"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="userName" required>
+        <label for="password"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="password" required>
+        <button type="submit">Login</button>
+      </form>
+
+    </dialog>
+
+  </section>
+
+  <div>
+
+
+  </div>
+
+
+  </form>
+  </dialog>
+
   <!-- Header-->
   <header>
 
@@ -85,9 +113,9 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white background-item-color navbar-botton-container" href="#">
-              <h4>Log In</h4>
-            </a>
+            <button id="btnModalOpen" class="nav-link text-white background-item-color navbar-botton-container">
+              Log In
+            </button>
           </li>
         </ul>
       </div>
@@ -345,6 +373,16 @@
     </section>
 
   </main>
+
+
+
+
+
+
+
+
+
+
 
 </body>
 

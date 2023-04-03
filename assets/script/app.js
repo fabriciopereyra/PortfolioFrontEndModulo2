@@ -10,9 +10,9 @@ function scrollFunction() {
     }
 }
 
-const sectionSkill = document.getElementById('section-skill');
-const sectionProject = document.getElementById('section-project');
-const progressBars = document.querySelectorAll('.progress-bar');
+const sectionSkill = document.getElementById("section-skill");
+const sectionProject = document.getElementById("section-project");
+const progressBars = document.querySelectorAll(".progress-bar");
 
 function showProgress() {
     progressBars.forEach(progressBar => {
@@ -30,7 +30,7 @@ function hideProgress() {
     });
 }
 
-window.addEventListener('scroll', () => {
+window.addEventListener("scroll", () => {
     const sSkill = sectionSkill.getBoundingClientRect().top;
     const sProject = sectionProject.getBoundingClientRect().top;
     const screen = window.innerHeight;
@@ -42,4 +42,16 @@ window.addEventListener('scroll', () => {
     if (sSkill < 0 ) {
         hideProgress();
     }
+});
+
+const btnModalOpen = document.getElementById("btnModalOpen");
+const btnModalClose = document.getElementById("btnModalClose");
+const modal = document.querySelector("dialog");
+
+btnModalOpen.addEventListener( "click", () => {
+    modal.showModal();
+});
+
+btnModalClose.addEventListener( "click", () => {
+    modal.close();
 });
